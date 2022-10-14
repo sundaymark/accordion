@@ -47,9 +47,15 @@ body {
     transition: .5s;
 }
 
-.accordion .container-content .active .answer{
-    height: 100%;
+.accordion .container-content.active .answer{
+    height: 100px;
 }
+
+.accordion .container-content.active .question::after{
+    content: '-';
+    font-size: smaller;
+}
+
 
 
 
