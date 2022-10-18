@@ -5,7 +5,7 @@
 }
 
 body {
-    background: url(images/image1.jpg)no-repeat center center / cover;
+    background: url(images/image1.jpg)no-repeat center center /contain;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -15,7 +15,7 @@ body {
 .accordion {
     width: 70%;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 .accordion h2 {
@@ -47,16 +47,15 @@ body {
     transition: .5s;
 }
 
-.accordion .container-content.active .answer{
+.accordion .container-content.active .answer {
     height: 100px;
+    overflow: auto;
 }
 
-.accordion .container-content.active .question::after{
+.accordion .container-content.active .question::after {
     content: '-';
     font-size: smaller;
 }
-
-
 
 
 
